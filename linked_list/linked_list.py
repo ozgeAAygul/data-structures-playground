@@ -19,6 +19,11 @@ class LinkedList:
   
   def isEmpty(self):
     return self.__size == 0
+
+  def first(self):
+      if self.isEmpty():
+          raise Empty("List is empty")
+      return self.__head.element
   
   # ADD METHODS
   
